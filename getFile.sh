@@ -25,7 +25,7 @@ set -o nounset                                  # Treat unset variables as an er
 
 if [[ $1 -lt $2 ]]
 then 
-    i=$2
+    i=$1
     while [[ $i -le $2 ]]
     do
         `wget http://icarus.cs.weber.edu/~hvalle/cs3030/MOCK_DATA_$i.tar.gz`
