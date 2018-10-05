@@ -19,22 +19,9 @@
 
 set -o nounset                                  # Treat unset variables as an error
 
-# Here I assume $1 and $2 are the beginning year and last year that the user
-# enters. To retrieve the files within the year range I check to see if the
-# range is valid. If not then the program logs an error. 
 
-if [[ $1 -lt $2 ]]
+`wget http://icarus.cs.weber.edu/~hvalle/cs3030/MOCK_DATA_$1.tar.gz`
+if [[ $? = 8 ]]
 then 
-    i=$2
-    while [[ $i -le $2 ]]
-    do
-        `wget http://icarus.cs.weber.edu/~hvalle/cs3030/MOCK_DATA_$i.tar.gz`
-        i=$((i + 1))
-    done
-else
-    echo "Error, invalid date range"
-    echo "invalid date range" > log
-    exit 2
+    echo "file not found" > log
 fi
-
-exit 0     
