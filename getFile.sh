@@ -20,7 +20,7 @@
 set -o nounset                                  # Treat unset variables as an error
 
 
-`wget http://icarus.cs.weber.edu/~hvalle/cs3030/MOCK_DATA_$1.tar.gz`
+`wget http://icarus.cs.weber.edu/~hvalle/cs3030/MOCK_DATA_$i.tar.gz`
 
 if [[ $? = 0 || $? = 8 ]]
 then 
