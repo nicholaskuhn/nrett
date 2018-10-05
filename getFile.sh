@@ -21,7 +21,8 @@ set -o nounset                                  # Treat unset variables as an er
 
 
 `wget http://icarus.cs.weber.edu/~hvalle/cs3030/MOCK_DATA_$1.tar.gz`
-if [[ $? = 8 ]]
+
+if [[ $? = 0 || $? = 8 ]]
 then 
-    echo "file not found" > log
+    echo "file not found" > getFilelog
 fi
