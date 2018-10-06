@@ -112,6 +112,7 @@ else
 fi
 
 ./compressFile.sh
+./transferFile.sh $user $passwd
 
 # Send an email
 `echo "Successfully transferred file to FTP <I.P.Address> server" | 

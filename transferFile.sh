@@ -19,8 +19,22 @@
 
 set -o nounset                                  # Treat unset variables as an error
 
-# Global variables
-have_u=0
-have_p=0
+HOST="137.190.19.85"
+
+dateFormat=`date +%Y_%m_%d_%H`
+
+# Check for user and password
+echo "Checking for user and password"
+if [[ ! -z $1 && ! -z $2 ]]
+then
+    ftp -inv $HOST <<END_SCRIPT
+user $1 $2
+cd /files
+mput NRETT_DATA_FILTER_*
+bye
+END_SCRIPT
+else
+    echo "No user/pass entered, exiting ftp"
+fi
 
 exit 0
