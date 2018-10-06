@@ -26,6 +26,17 @@ have_e=0
 have_u=0
 have_p=0
 
+month=`date +%m`
+date=`date +%Y-%m-%d`
+directory="$HOME/log/$month"
+
+if [[ ! -d $directory ]]
+then
+    `mkdir -p $directory`
+fi
+
+logFile="finalProject_$date.log"
+
 # Usage function
 UsageFunction()
 {
@@ -71,13 +82,13 @@ done
 # Check for correct Number of arguments
 if [[ $have_f -eq 1 && $have_l -eq 1 ]]
 then
-    echo "Have required information"
+    echo "Have required information" >> /$directory/$logFile
 else
     UsageFunction
 fi
 
 ## Make sure getopts are used
-if [[ ! "$firstYear" || ! "$lastYear" ]]
+if [[ ! "$firstYear" || ! "$lastYear" || ! "$email" ]]
 then
     UsageFunction
 fi
@@ -87,16 +98,20 @@ then
     i=$firstYear
     while [[ $i -le $lastYear ]]
     do
-        echo "Checking for file MOCK_DATA_$i.tar.gz"
+        echo "Checking for file MOCK_DATA_$i.tar.gz" >> /$directory/$logFile
         sleep 1
-        `./getFile $i`
+        `./getFile.sh $i`
         i=$((i + 1))
         done
 else
-    echo "Error, invalid date range"
-    echo "invalid date range" > log
+    echo "Error, invalid date range" 
+    echo "invalid date range"
     exit 2
 fi
+
+# Send an email
+`echo "Successfully transferred file to FTP <I.P.Address> server" | 
+    mail -s "FTP transfer notification" $email`
 
 
 exit 0

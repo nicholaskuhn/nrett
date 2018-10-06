@@ -19,9 +19,14 @@
 
 set -o nounset                                  # Treat unset variables as an error
 
+month=`date +%m`
+date=`date +%Y-%m-%d`
+
 
 `wget http://icarus.cs.weber.edu/~hvalle/cs3030/MOCK_DATA_$1.tar.gz`
 if [[ $? = 8 ]]
 then 
-    echo "file not found" > log
+    echo "file not found" >> "$HOME/log/$month/finalProject_$date.log"
+else
+    echo "file located, downloading.." >> "$HOME/log/$month/finalProject_$date.log" 
 fi
