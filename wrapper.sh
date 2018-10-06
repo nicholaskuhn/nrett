@@ -102,7 +102,7 @@ then
     do
         echo "Checking for file MOCK_DATA_$i.tar.gz" >> /$directory/$logFile
         sleep 1
-        `./getFile.sh $i`
+        ./getFile.sh $i
         i=$((i + 1))
         done
 else
@@ -110,6 +110,8 @@ else
     echo "invalid date range"
     exit 2
 fi
+
+./compressFile.sh
 
 # Send an email
 `echo "Successfully transferred file to FTP <I.P.Address> server" | 

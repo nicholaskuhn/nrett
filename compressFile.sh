@@ -5,7 +5,7 @@
 #
 #         USAGE: ./compressFile.sh
 #
-#   DESCRIPTION: 
+#   DESCRIPTION: Compresses the file
 #
 #       OPTIONS: ---
 #  REQUIREMENTS: ---
@@ -19,3 +19,14 @@
 
 set -o nounset                                  # Treat unset variables as an error
 
+month=`date +%m`
+date=`date +%Y-%m-%d`
+dateFormat=`date +%Y_%m_%d_%H:%M`
+directory="$HOME/log/$month"
+logFile="finalProject_$date.log"
+
+echo "Compressing Data Filter file.." >> $directory/$logFile
+
+zip NRETT_DATA_FILTER_${dateFormat}.zip $directory/$logFile
+
+exit 0
