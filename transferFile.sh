@@ -19,12 +19,17 @@
 
 set -o nounset                                  # Treat unset variables as an error
 
+month=`date +%m`
+date=`date +%Y-%m-%d`
+directory="$HOME/log/$month"
+logFile="finalProject_$date.log"
+
 HOST="137.190.19.85"
 
 dateFormat=`date +%Y_%m_%d_%H`
 
 # Check for user and password
-echo "Checking for user and password"
+echo "Checking for user and password" >> $directory/$logFile
 if [[ ! -z $1 && ! -z $2 ]]
 then
     ftp -inv $HOST <<END_SCRIPT
@@ -34,7 +39,7 @@ mput NRETT_DATA_FILTER_*
 bye
 END_SCRIPT
 else
-    echo "No user/pass entered, exiting ftp"
+    echo "No user/pass entered, exiting ftp" >> $directory/$logFile
 fi
 
 exit 0

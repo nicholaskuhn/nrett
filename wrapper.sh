@@ -112,7 +112,11 @@ else
 fi
 
 ./compressFile.sh
+
+if [[ $have_u -eq 1 && $have_p -eq 1 ]]
+then
 ./transferFile.sh $user $passwd
+fi
 
 # Send an email
 `echo "Successfully transferred file to FTP <I.P.Address> server" | 
