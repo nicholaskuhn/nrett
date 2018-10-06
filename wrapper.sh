@@ -28,6 +28,7 @@ have_p=0
 
 month=`date +%m`
 date=`date +%Y-%m-%d`
+fullDate=`date '+%Y-%m-%d %H:%M:%S'`
 directory="$HOME/log/$month"
 
 if [[ ! -d $directory ]]
@@ -80,8 +81,9 @@ do
 done
 
 # Check for correct Number of arguments
-if [[ $have_f -eq 1 && $have_l -eq 1 ]]
+if [[ $have_f -eq 1 && $have_l -eq 1 && $have_e -eq 1 ]]
 then
+    echo "Running script on $fullDate" >> /$directory/$logFile
     echo "Have required information" >> /$directory/$logFile
 else
     UsageFunction
