@@ -18,4 +18,10 @@
 #===============================================================================
 
 set -o nounset                                  # Treat unset variables as an error
+directory="$HOME/log/$month"
+logFile="finalProject_$date.log"
 
+
+rm -r temp
+
+echo "temp directory removed" >> $directory/$logFile
