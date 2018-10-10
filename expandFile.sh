@@ -22,13 +22,15 @@ set -o nounset                                  # Treat unset variables as an er
 mkdir temp
 
 # expand all .tar.gz files that were retreived from the wget script and
-# save them to a temp directory. Log your activity. 
+# save them to one file in a temp directory. Log your activity. 
 for f in *.tar.gz;
 do
     tar -xvzf "$f"
     mv "$f" temp
-    mv *.csv temp;
+    cat *.csv >> temp.txt;
+    mv *.csv temp
     echo "tar.gz files have been expanded" >> log.txt
 done
+
 
 exit 0
