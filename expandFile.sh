@@ -19,6 +19,11 @@
 
 set -o nounset                                  # Treat unset variables as an error
 
+month=`date +%m`
+date=`date +%Y-%m-%d`
+directory="$HOME/log/$month"
+logFile="finalProject_$date.log"
+
 mkdir temp
 
 # expand all .tar.gz files that were retreived from the wget script and
@@ -30,7 +35,7 @@ do
     mv "$f" temp
     cat *.csv >> temp.txt;
     mv *.csv temp
-    echo "tar.gz files have been expanded" >> log.txt
+    echo "tar.gz files have been expanded" >> $directory/$logFile
 done
 
 

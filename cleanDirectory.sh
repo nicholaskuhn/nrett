@@ -18,10 +18,16 @@
 #===============================================================================
 
 set -o nounset                                  # Treat unset variables as an error
+
+month=`date +%m`
+date=`date +%Y-%m-%d`
 directory="$HOME/log/$month"
 logFile="finalProject_$date.log"
 
-
+# Remove the temp dir and its contents that were created from the 
+# expandFile.sh program
 rm -r temp
 
 echo "temp directory removed" >> $directory/$logFile
+
+exit 0
