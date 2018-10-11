@@ -29,9 +29,19 @@ mkdir temp
 # expand all .tar.gz files that were retreived from the wget script and
 # save them to a temp directory. The output from the csv files
 # will be saved in a temp.txt file in the nrett directory. Log your activity. 
+
+
+
 for f in *.tar.gz;
 do
     tar -xvzf "$f"
+        
+        if [[ $? -eq 2 ]]
+            then
+                echo "Unable to un-tar or uncompress file" >> $directory/$logFile
+                exit 2
+        fi
+
     mv "$f" temp
     cat *.csv >> temp.txt;
     mv *.csv temp

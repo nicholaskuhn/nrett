@@ -26,11 +26,11 @@ logFile="finalProject_$date.log"
 
 `wget http://icarus.cs.weber.edu/~hvalle/cs3030/MOCK_DATA_$1.tar.gz`
 
-if [[ $? = 8 ]]
+if [[ $? -eq 8 ]]
 then 
-    echo "file not found" >> "$directory/$logFile"
+    echo "file not found" >> $directory/$logFile
 else
-    echo "file located, downloading.." >> "$directory/$logFile"
+    echo "file located, downloading.." >> $directory/$logFile
 fi
 
 exit 0

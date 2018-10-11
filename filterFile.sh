@@ -26,10 +26,14 @@ logFile="finalProject_$date.log"
 
 # call the sed file and awk file to modify/filter the data you want
 # from temp.txt then write that data to a new file
-
-
 sed -f filterFile.sed temp.txt | awk -f filterFile.awk >> filterd.txt
 
-echo "filterd.txt has been created" >> $directory/$logFile
+if [[ $? -eq 0 ]]
+then
+    echo "file to filter not found" >> $directory/$logFile
+    exit 2
+else
+    echo "filterd.txt has been created" >> $directory/$logFile
+fi
 
 exit 0
