@@ -27,7 +27,10 @@ logFile="finalProject_$date.log"
 # Remove the temp dir and its contents that were created from the 
 # expandFile.sh program
 rm -r temp
+rm -r temp.txt
+rm -r filterd.txt
+rm -r NRETT_DATA_FILTER_*.zip
 
-echo "temp directory removed" >> $directory/$logFile
+echo "extra files removed" >> $directory/$logFile
 
 exit 0

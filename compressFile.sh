@@ -27,6 +27,10 @@ logFile="finalProject_$date.log"
 
 echo "Compressing Data Filter file.." >> $directory/$logFile
 
-zip NRETT_DATA_FILTER_${dateFormat}.zip $directory/$logFile
+mv $directory/$logFile $PWD
+
+zip NRETT_DATA_FILTER_${dateFormat}.zip *.log filterd.txt
+
+mv finalProject_*.log $directory/$logFile
 
 exit 0

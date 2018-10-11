@@ -111,16 +111,19 @@ else
     exit 2
 fi
 
+./expandFile.sh
+./filterFile.sh
 ./compressFile.sh
 
 if [[ $have_u -eq 1 && $have_p -eq 1 ]]
 then
 ./transferFile.sh $user $passwd
+else
+    # Send an email
+    `echo "Successfully transferred file to FTP <I.P.Address> server" | 
+    mail -s "FTP transfer notification" $email`
 fi
 
-# Send an email
-`echo "Successfully transferred file to FTP <I.P.Address> server" | 
-    mail -s "FTP transfer notification" $email`
-
+./cleanDirectory.sh
 
 exit 0

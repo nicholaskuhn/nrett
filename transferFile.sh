@@ -35,7 +35,7 @@ then
     ftp -inv $HOST <<END_SCRIPT
 user $1 $2
 cd /files
-mput NRETT_DATA_FILTER_*
+mput NRETT_DATA_FILTER_*.zip
 bye
 END_SCRIPT
 else
