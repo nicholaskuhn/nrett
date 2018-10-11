@@ -25,7 +25,7 @@ dateFormat=`date +%Y_%m_%d_%H:%M`
 directory="$HOME/log/$month"
 logFile="finalProject_$date.log"
 
-echo "Compressing Data Filter file.." >> $directory/$logFile
+echo "Compressing files.." >> $directory/$logFile
 
 mv $directory/$logFile $PWD
 
