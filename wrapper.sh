@@ -104,7 +104,7 @@ then
         sleep 1
         ./getFile.sh $i
         i=$((i + 1))
-        done
+    done
 else
     echo "Error, invalid date range" 
     echo "invalid date range"
@@ -117,10 +117,15 @@ fi
 
 if [[ $have_u -eq 1 && $have_p -eq 1 ]]
 then
-./transferFile.sh $user $passwd
+    ./transferFile.sh $user $passwd
+    # Send an email
+    echo "Successfully transferred file to FTP <I.P.Address> server" >> /$directory/$logFile
+    `cat $directory/$logFile | 
+        mail -s "FTP transfer notification" $email`
 else
     # Send an email
-    `echo "Successfully transferred file to FTP <I.P.Address> server" | 
+    echo "Did not transfer file to FTP <I.P.Address> server" >> /$directory/$logFile
+    `cat $directory/logFile | 
     mail -s "FTP transfer notification" $email`
 fi
 
