@@ -1,5 +1,3 @@
-# nrett
-#
 # Usage
 ###  [-f <first_YEAR>] (REQUIRED) [-l <last_YEAR>] (REQUIRED)
 ###   [-e <email>] (REQUIRED) [-u <user>] (optional) [-p <passwd>] (optional)
