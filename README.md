@@ -11,10 +11,10 @@ expands all .tar.gz files that were retreived from the gitFile.sh script and sav
 ## filterFile.sh
 Calls the sed file and awk file to modify/filter the data from temp.txt then writes that data to a new file called filterd.txt
 
-## compressFile.sh - Nick to edit
+## compressFile.sh
 Compresses the final filter data file with the log file
 
-## transferFile.sh - Nick to edit
+## transferFile.sh
 Transfers file via FTP if user has entered their user and password
 
 ## cleanDirectory.sh
