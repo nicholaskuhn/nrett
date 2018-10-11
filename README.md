@@ -3,7 +3,7 @@
 ###   [-e <email>] (REQUIRED) [-u <user>] (optional) [-p <passwd>] (optional)
 #
 # gitFile.sh - Brett
- Retrives files from icarus server. Takes in a single input parameter being the year
+###  Retrives files from icarus server. Takes in a single input parameter being the year
 #
 # expandFile.sh - Brett
 ###   expands all .tar.gz files that were retreived from the gitFile.sh script and
