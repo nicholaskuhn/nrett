@@ -24,6 +24,5 @@ Removes the temp dir and its contents that were created from the expandFile.sh p
 The main script
 
 ## Credits
-
 Nick Kuhn
 Brett Cloward
