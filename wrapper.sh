@@ -125,7 +125,7 @@ then
 else
     # Send an email
     echo "Did not transfer file to FTP <I.P.Address> server" >> /$directory/$logFile
-    `cat $directory/logFile | 
+    `cat $directory/$logFile | 
     mail -s "FTP transfer notification" $email`
 fi
 

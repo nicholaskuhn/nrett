@@ -1,0 +1,225 @@
+commit 0570e98c6486a180689628dd2b991f871b15e7e6
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Thu Oct 11 05:17:09 2018 +0000
+
+    added crontab
+
+commit 4db504c42fd5196865f635d1c66268bc88e1e2c1
+Merge: 5a7b53e 9ad9322
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Thu Oct 11 03:51:12 2018 +0000
+
+    Merge branch 'master' of https://github.com/nicholaskuhn/nrett
+
+commit 5a7b53ebc10a8e0e66478ea6d9678323d9680dae
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Thu Oct 11 03:50:57 2018 +0000
+
+    updated email stuff in wrapper
+
+commit 9ad932207946d530ac5937b2c01946f8c350f423
+Author: nicholaskuhn <31420846+nicholaskuhn@users.noreply.github.com>
+Date:   Wed Oct 10 21:45:28 2018 -0600
+
+    Update README.md
+
+commit 4d42991d59b626fb8cfe9ab220ed15751d7606e3
+Author: brettcloward05 <42742770+brettcloward05@users.noreply.github.com>
+Date:   Wed Oct 10 21:41:28 2018 -0600
+
+    Update README.md
+
+commit 4bdfe73e0c264c510edfd3c0fd9e684961395be6
+Author: brettcloward05 <42742770+brettcloward05@users.noreply.github.com>
+Date:   Wed Oct 10 21:41:08 2018 -0600
+
+    Update README.md
+
+commit 55867d66810a3a1c95c39c3136750c381685f0e9
+Author: brettcloward05 <42742770+brettcloward05@users.noreply.github.com>
+Date:   Wed Oct 10 21:39:59 2018 -0600
+
+    Update README.md
+
+commit 71191e451db255af10fb788f848cdc5c0a3fc8ce
+Author: brettcloward05 <42742770+brettcloward05@users.noreply.github.com>
+Date:   Wed Oct 10 21:38:27 2018 -0600
+
+    Update README.md
+
+commit 91d857888ca8d75d0abbc7fa0a66048f27494477
+Merge: 5066f30 586002c
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Thu Oct 11 03:32:57 2018 +0000
+
+    Merge branch 'master' of https://github.com/nicholaskuhn/nrett
+
+commit 5066f30b153ac403c62f5feaacc5608a75b752f8
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Thu Oct 11 03:32:06 2018 +0000
+
+    log changes and unzip placement fixes
+
+commit 586002c8b32dea955761b46119fe7cb341ef6498
+Author: brettcloward05 <42742770+brettcloward05@users.noreply.github.com>
+Date:   Wed Oct 10 21:29:25 2018 -0600
+
+    Update README.md
+
+commit 3b55468e7916cc2556974289e957f29a0d431e06
+Author: brettcloward05 <42742770+brettcloward05@users.noreply.github.com>
+Date:   Wed Oct 10 21:29:07 2018 -0600
+
+    Update README.md
+
+commit 1ea737de883dec50d29dc92c4f34bbb04fa1ba55
+Author: brettcloward05 <42742770+brettcloward05@users.noreply.github.com>
+Date:   Wed Oct 10 21:19:28 2018 -0600
+
+    Update README.md
+
+commit f7544f236a89a80a1d5fba361b85ab12c9e7a54c
+Author: brettcloward05 <42742770+brettcloward05@users.noreply.github.com>
+Date:   Wed Oct 10 21:18:48 2018 -0600
+
+    Create README.md
+
+commit 37391f5326340fdf9297c31177eab7566ecf1225
+Author: Brett Cloward <brettcloward@mail.weber.edu>
+Date:   Thu Oct 11 03:03:31 2018 +0000
+
+    Added negative results logging
+
+commit 6935e7e86105a84da2f4507229c3ff3c2b2be6f8
+Author: Brett Cloward <brettcloward@mail.weber.edu>
+Date:   Thu Oct 11 02:09:43 2018 +0000
+
+    final programs 10/10/18
+
+commit ef21b81800c7d7c829336b4bd3d5943a90748f22
+Author: Brett Cloward <brettcloward@mail.weber.edu>
+Date:   Wed Oct 10 22:54:43 2018 +0000
+
+    Updated 10/10/18
+
+commit 8bb57978a55fa9193cc88dff5142a3eb2a1a8afb
+Author: Brett Cloward <brettcloward@mail.weber.edu>
+Date:   Wed Oct 10 22:53:21 2018 +0000
+
+    Updated 10/10/18
+
+commit 4fc734abaf51a7ab885fe6f668bb6be130b35d53
+Author: Brett Cloward <brettcloward@mail.weber.edu>
+Date:   Wed Oct 10 22:41:35 2018 +0000
+
+    updated as of 10/10/18. Working well now
+
+commit ec732fc2c1d198a0f5a062fdf79a08e9d7b6b4a0
+Author: Brett Cloward <brettcloward@mail.weber.edu>
+Date:   Tue Oct 9 03:43:04 2018 +0000
+
+    updated as of 10/8/18 at 9:45 pm
+
+commit cea9deb5107a6103a1916f6dbd1ad5004bd393ac
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Sat Oct 6 20:32:53 2018 +0000
+
+    fixed logs
+
+commit 84fb62dc2d33e826342bc2223ed7117ed8141019
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Sat Oct 6 20:14:04 2018 +0000
+
+    complete ftp transferFile
+
+commit b81888ffd350cb6295ae8c15bbaa20c09ab3fd63
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Sat Oct 6 04:04:46 2018 +0000
+
+    completed compressFile
+
+commit 65cb0c1330913197f28c85891f0339467aa0fda1
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Sat Oct 6 03:07:35 2018 +0000
+
+    testing and getFile fixes
+
+commit 2f994aed8fcfbb1eb2dd59220dc994832fba031c
+Merge: 9564de5 c3f0528
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Sat Oct 6 02:55:22 2018 +0000
+
+    fixed merge?
+
+commit 9564de5dca8c250ea1c8e9908481931abf4a7095
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Sat Oct 6 02:54:00 2018 +0000
+
+    added log calls
+
+commit c3f05284fbfef3b924ed524b14eaa7666ec49dcc
+Author: Brett Cloward <brettcloward@mail.weber.edu>
+Date:   Fri Oct 5 02:36:59 2018 +0000
+
+    fifth commit
+
+commit 5c5f3e9dd47ea2906c7870d75f3bcf6387c64ead
+Author: Brett Cloward <brettcloward@mail.weber.edu>
+Date:   Fri Oct 5 02:34:39 2018 +0000
+
+    fourth commit
+
+commit e167585d90c826e50b6fa5d2c80f62e483201773
+Merge: 1f18fef c52b780
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Fri Oct 5 02:27:03 2018 +0000
+
+    Merge branch 'master' of https://github.com/nicholaskuhn/nrett
+
+commit c52b780c9862b41a013fa14952eb0d5e4e456a27
+Author: Brett Cloward <brettcloward@mail.weber.edu>
+Date:   Fri Oct 5 02:25:39 2018 +0000
+
+    third commit
+
+commit 1f18feffd9ccdccf9ce4d74416397f6ab1239853
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Fri Oct 5 02:15:17 2018 +0000
+
+    added looping for prog1
+
+commit d57a17b67ce5169e5c044985bd50966e277bbf59
+Author: Brett Cloward <brettcloward@mail.weber.edu>
+Date:   Fri Oct 5 02:09:05 2018 +0000
+
+    3rd commit
+
+commit f2866bfbbb8a5617eef8824156801e992e3dcf12
+Author: Brett Cloward <brettcloward@mail.weber.edu>
+Date:   Fri Oct 5 01:48:47 2018 +0000
+
+    2nd commit
+
+commit 3e006e64024abbb1064e17e6ee4fbf4f96193b76
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Mon Oct 1 15:13:40 2018 +0000
+
+    remove test.txt
+
+commit 205a43d539d220b2904eb4aa6c9e4f357356a227
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Mon Oct 1 15:12:46 2018 +0000
+
+    inital commit
+
+commit d33bd4cf1b659a4f816910203c4bfb9a1f755fd0
+Author: Brett Cloward <brettcloward@mail.weber.edu>
+Date:   Mon Oct 1 15:08:04 2018 +0000
+
+    wrapper.sh
+
+commit 978d1c1b03f660f5bf079f99090e868596a48bf3
+Author: Nicholas Kuhn <nicholaskuhn@mail.weber.edu>
+Date:   Mon Oct 1 15:02:25 2018 +0000
+
+    initial commit
