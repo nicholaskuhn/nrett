@@ -1,0 +1,1 @@
+* */6 1-31 1-12 1-5 /home/nk60019/submit/HW5/nrett/wrapper.sh -f 2015 -l 2016 -e nicholaskuhn@mail.weber.edu -u nk60019 -p XXXXXXXXXXX
